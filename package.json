@@ -1,0 +1,41 @@
+{
+  "name": "apollo-pg-ts-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "develop": "nodemon dist/index.js",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.34",
+    "@types/validator": "^13.7.2",
+    "class-validator": "^0.13.2",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^5.1.3",
+    "@mikro-orm/core": "^5.1.3",
+    "@mikro-orm/migrations": "^5.1.3",
+    "@mikro-orm/postgresql": "^5.1.3",
+    "apollo-server-express": "^3.7.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "graphql": "15.8.0",
+    "type-graphql": "^1.1.1"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  }
+}
